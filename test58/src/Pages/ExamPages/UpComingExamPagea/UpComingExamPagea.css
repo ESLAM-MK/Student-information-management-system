@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+:root {
+  --primary: #bf9b30;
+  --Green: #34a853;
+  --Red: #1a1919;
+  --Grey: #d0d0d0;
+  --Black: #000000;
+  --white: #fff;
+  --overlay: rgba(0, 0, 0, 0.25);
+  --hover: #dbb338;
+}
+
+/* icon color */
+.title-icon {
+  color: var(--primary);
+}
+
+.bg-exam {
+  /* height: 85vh; */
+  background-size: cover;
+  background-position: center;
+}
+
+.line-hvr {
+  width: 50px;
+  height: 1px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  margin-top: -10px;
+}
+
+.exam-hvr:hover .line-hvr {
+  width: 75px;
+}
+
+.ins-name {
+  color: var(--primary);
+}
+
+.join-btn {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.join-btn:hover {
+  background-color: var(--hover);
+}
+
+/* pagination */
+.pagination > li > svg {
+  cursor: pointer;
+  padding: 4px;
+  margin-top: 4px;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.pagination > li > svg:hover {
+  color: var(--hover) !important;
+  border: 1px solid var(--hover) !important;
+}
+
+.pagination > li > a {
+  background-color: transparent !important;
+  border: none !important;
+  color: white;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover {
+  z-index: 3;
+  border: none !important;
+  box-shadow: none !important;
+  color: var(--hover) !important;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .line-hvr {
+    width: 75px;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .join-btn {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: var(--primary);
+    color: var(--white);
+  }
+
+  .join-btn:hover {
+    background-color: var(--hover);
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  svg {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  svg {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 85%;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
+  svg {
+    font-size: 16px;
+  }
+}
